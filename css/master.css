@@ -10,7 +10,7 @@
 
 
 body, html{
-  height: 100%
+  /* height: 100vh; */
 }
 
 nav{
@@ -71,14 +71,26 @@ nav ul a{
 #geisha_text{
 
   height: 75vh;
-  padding-top: 15vh;
+  padding-top: 5vh;
   font-family: 'brushido', cursive;
   text-align: center;
 
 }
 #geisha_text h1{
 
-  font-size: 20rem;
-  font-weight: bolder;
+  font-size: 20em;
+  font-weight: bold;
 
+}
+.clip{
+  /*
+  Ensure background is added first
+  */
+  background: url("../img/patterns/arches_red.png");
+
+   background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-repeat: repeat;
+  z-index: 5;
 }
