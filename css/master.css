@@ -1,5 +1,12 @@
 /* font-family: 'Nanum Brush Script', cursive; */
-
+@font-face {
+      src: url("../fonts/JAPAB.ttf");
+      font-family: 'JAPAB';
+}
+@font-face {
+      src: url("../fonts/Brushido.ttf");
+      font-family: 'brushido';
+}
 
 
 body, html{
@@ -24,7 +31,7 @@ nav ul a{
 
 }
 
-.index_bg::before, .index_bg::after{
+.index_bg::before{
 
   position:absolute;
   z-index: -1;
@@ -33,9 +40,9 @@ nav ul a{
   left: 0;
   content: "";
   background-image: url("../img/bg2.jpg");
-  background-size: contain;
-  background-attachment: scroll;
-  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 200vh;
   filter: blur(5px);
 
 }
@@ -48,15 +55,30 @@ nav ul a{
 }
 
 .nav_ul{
-  margin-top: 3vh;
+  margin-top: 4vh;
   margin-left: 20vh;
   float: right;
 }
 
 .nothing{
 
-  margin-top: 75vh;
+  margin-top: 0vh;
   background-blend-mode: multiply;
-  background-color: rgba(42, 72, 116, 0.3);
+  background-color: rgba(42, 72, 116, 0.8);
+
+}
+
+#geisha_text{
+
+  height: 75vh;
+  padding-top: 15vh;
+  font-family: 'brushido', cursive;
+  text-align: center;
+
+}
+#geisha_text h1{
+
+  font-size: 20rem;
+  font-weight: bolder;
 
 }
