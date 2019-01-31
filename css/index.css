@@ -1,0 +1,64 @@
+/* body{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+} */
+
+.clip_index{
+  background: url("../img/bg3.jpg");
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  z-index: 5;
+
+}
+
+.index_bg::before{
+
+  position:fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  background-image: url("../img/golden_cherry.png");
+  height: 100%;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+
+}
+#geisha_text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  height:90vh;
+  margin-top: 0vh;
+  margin-right: 0vw;
+  text-align: center;
+}
+#geisha_text span{
+  font-size: 18vh;
+  font-weight: bolder;
+}
+#geisha_text a{
+
+  height: 12vh;
+
+}
+/* #geisha_text img{
+
+  margin-top: 40vh;
+  margin-left: 0vw;
+  height: 20vh;
+  float: left;
+
+} */
