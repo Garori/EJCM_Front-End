@@ -19,6 +19,7 @@
 
 body, html{
   /* height: 100vh; */
+  width: 100%;
 }
 
 nav{
@@ -38,12 +39,22 @@ nav ul a{
   Ensure background is added first
   */
   background: url("../img/patterns/arches_red.png");
-
   background-attachment: fixed;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-repeat: repeat;
   z-index: 5;
+}
+.clip_index{
+  background: url("../img/bg3.jpg");
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  z-index: 5;
+
 }
 
 
@@ -58,7 +69,7 @@ nav ul a{
 
 }
 
-.index_bg::before{
+.home_bg::before{
 
   position:absolute;
   z-index: -1;
@@ -70,9 +81,26 @@ nav ul a{
   height: 100%;
   background-size: cover;
   background-attachment: fixed;
-  /* filter: blur(5px); */
 
 }
+
+.index_bg::before{
+
+  position:fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  background-image: url("../img/golden_cherry.png");
+  height: 100%;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+
+}
+
 
 .logo_size{
   top: 0vh;
@@ -97,7 +125,7 @@ nav ul a{
 }
 
 
-#geisha_text{
+#geisha_text, #geisha_index{
   margin-top: 0vh;
   height: 70vh;
   padding-top: 5vh;
@@ -105,12 +133,36 @@ nav ul a{
   text-align: center;
 
 }
+
+#geisha_index{
+  height:40vh;
+  margin-top: 50vh;
+  margin-right: 25vw;
+  text-align: right;
+}
+
 #geisha_text h1{
 
   font-size: 32vw;
   font-weight: bold;
 
 }
+
+#geisha_index h1{
+  font-size: 16vw;
+  font-weight: bold;
+}
+#geisha_index img{
+
+  margin-top: 15vh;
+  margin-left: 15vw;
+  height: 20vh;
+  float: left;
+
+}
+
+
+
 
 #art{
   margin-left: 0vw;
