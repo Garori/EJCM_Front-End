@@ -7,6 +7,14 @@
       src: url("../fonts/Brushido.ttf");
       font-family: 'brushido';
 }
+@font-face {
+      src: url("../fonts/Fujimaru.ttf");
+      font-family: 'fujimaru';
+}
+@font-face {
+      src: url("../fonts/embers.ttf");
+      font-family: 'geisha';
+}
 
 
 body, html{
@@ -16,18 +24,37 @@ body, html{
 nav{
   height: 15vh;
   z-index: 1;
-  background-color: rgba(42, 72, 116, 0.3);
+
 }
 
 nav ul a{
-  font-family: 'Nanum Brush Script', cursive;
-  font-size: 2rem;
+  font-family: 'geisha', cursive;
+  font-size: 4em;
+  margin-left: 5vw;
 }
 
-.container{
+.clip{
+  /*
+  Ensure background is added first
+  */
+  background: url("../img/patterns/arches_red.png");
 
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-repeat: repeat;
+  z-index: 5;
+}
+
+
+
+.default_bg{
+
+  margin-top: 0vh;
+  background: url("../img/patterns/arches_red.png");
+  background-clip: text;
+  background-repeat: repeat;
+  background-attachment: fixed;
 
 }
 
@@ -39,38 +66,40 @@ nav ul a{
   right: 0;
   left: 0;
   content: "";
-  background-image: url("../img/bg2.jpg");
+  background-image: url("../img/Sessho.jpeg");
+  height: 100%;
   background-size: cover;
   background-attachment: fixed;
-  height: 200vh;
-  filter: blur(5px);
+  /* filter: blur(5px); */
 
 }
 
 .logo_size{
+  top: 0vh;
+  left: 0vw;
   height: 12vh;
-  margin-top: 2vh;
-  margin-left: 4vh;
-  margin-right: 0vh;
+  margin: 2vh 2vw;
+  border: 0px;
+  padding: 0px;
+}
+
+.mid_row{
+
+  height: 60vh;
+  margin-top:15vh;
+
 }
 
 .nav_ul{
-  margin-top: 4vh;
-  margin-left: 20vh;
-  float: right;
+  margin-top: 3.5vh;
+  margin-left: 0vh;
+  top: 0vh;
 }
 
-.nothing{
-
-  margin-top: 0vh;
-  background-blend-mode: multiply;
-  background-color: rgba(42, 72, 116, 0.8);
-
-}
 
 #geisha_text{
-
-  height: 75vh;
+  margin-top: 0vh;
+  height: 70vh;
   padding-top: 5vh;
   font-family: 'brushido', cursive;
   text-align: center;
@@ -78,19 +107,23 @@ nav ul a{
 }
 #geisha_text h1{
 
-  font-size: 20em;
+  font-size: 32vw;
   font-weight: bold;
 
 }
-.clip{
-  /*
-  Ensure background is added first
-  */
-  background: url("../img/patterns/arches_red.png");
 
-   background-attachment: fixed;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-repeat: repeat;
-  z-index: 5;
+#art{
+  margin-left: 0vw;
 }
+
+
+/* @media only screen and (max-width: 1080px) and (orientation: landscape) {
+  #geisha_text h1{
+    font-size: 18em;
+  }
+}
+@media only screen and (max-width: 755px) and (orientation:landscape) {
+  #geisha_text h1{
+    font-size: 15em;
+  }
+} */
